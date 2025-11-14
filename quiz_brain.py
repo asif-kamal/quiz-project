@@ -18,7 +18,9 @@ class QuizBrain:
     def check_answer(self, answer, correct_answer):
         if answer == correct_answer:
             self.score += 1
-            print("Correct! Score: %d/%d" % (self.score, self.question_number))
+            print("Correct!")
         else:
-            print("Incorrect! Score: %d/%d" % (self.score, self.question_number))
+            print("Incorrect!")
         print("The correct answer is %s." % correct_answer)
+        print("Score: %d/%d" % (self.score, self.question_number))
+        print("\n")
